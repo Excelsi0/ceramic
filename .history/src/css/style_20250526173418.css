@@ -1,0 +1,7 @@
+.footer__title {
+    @apply text-base font-medium uppercase text-light;
+}
+
+.footer__text {
+    @apply text-base font-medium text-light;
+}

@@ -1,0 +1,9 @@
+.footer__titles {
+    @apply text-sm font-medium uppercase text-light;
+}
+
+@media (max-width: 768px) {
+    .footer__titles {
+        @apply text-sm font-medium uppercase text-light;
+    }
+}

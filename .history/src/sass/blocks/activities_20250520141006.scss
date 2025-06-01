@@ -1,0 +1,68 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.activities {
+    margin-top: 60px;
+    &__titles-h3 {
+        margin-top: 20px;
+    }
+    &__img {
+        margin-top: 40px;
+        width: 100%;
+    }
+    &__text {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        color: $dark;
+        &-color {
+            font-weight: 500;
+            color: $ceramic;
+        }
+    }
+}
+
+@include breakpoint("md") {
+    .activities {
+        &__titles-h2 {
+            font-size: 36px;
+        }
+        &__titles-h3 {
+            font-size: 24px;
+            margin-top: 40px;
+        }
+        &__text {
+            margin-top: 25px;
+            font-size: 20px;
+        }
+    }
+}
+
+@include breakpoint("xl") {
+    .activities {
+        &__titles-h2 {
+            font-size: 48px;
+        }
+        &__titles-h3 {
+            margin-top: 80px;
+        }
+        &__img {
+            height: 250px;
+            object-fit: cover;
+        }
+    }
+}
+
+@include breakpoint("xxl") {
+    .activities {
+        margin-top: 100px;
+
+        &__titles-h3 {
+            margin-top: 80px;
+            font-size: 32px;
+        }
+        &__text {
+            font-size: 24px;
+        }
+    }
+}

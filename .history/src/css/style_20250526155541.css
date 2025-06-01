@@ -1,0 +1,3 @@
+.footer__titles {
+    @apply text-sm font-medium uppercase text-light;
+}

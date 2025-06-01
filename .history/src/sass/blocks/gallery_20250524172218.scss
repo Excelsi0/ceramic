@@ -1,0 +1,5 @@
+.swiper-pagination-bullet {
+    @apply w-10 h-10 rounded-none bg-dark;
+.swiper-pagination-bullet-active {
+    @apply bg-ceramic !important;
+}

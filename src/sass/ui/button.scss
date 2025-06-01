@@ -1,0 +1,7 @@
+@use "/src/sass/base/mixins.scss" as *;
+
+.btn {
+    @include btn;
+    width: 230px;
+    height: 50px;
+}

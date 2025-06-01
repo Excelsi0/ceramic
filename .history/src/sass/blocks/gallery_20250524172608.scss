@@ -1,0 +1,8 @@
+@use "/src/sass/base/variables.scss" as *;
+
+span.swiper-pagination-bullet {
+    background-color: $dark !important;
+}
+span.swiper-pagination-bullet-active {
+    background-color: $ceramic !important;
+}

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>pottery</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
+			rel="stylesheet" />
+		<link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="/src/css/style.css">
+	</head>
+	<body>
+		<main>
+			<section class="relative hero">
+				<img src="/src/img/promo/potter.jpg" alt="potter"
+					class="hero__potter">
+				<div id="sideMenu"
+					class="fixed w-screen h-screen transition-all duration-300 bg-light -left-full">
+					<h2>kek</h2>
+
+				</div>
+				<div class="container">
+					<div class="header">
+
+						<div class="header__top">
+							<div
+								class="burger"
+								id="toggleMenu"><span></span><span></span><span></span>
+							</div>
+							<a href class="header__logo"><img
+									src="/src//logo/logo.png" alt="logo"
+									class="header__logo_img"></a>
+							<div class="header__icons">
+								<a href="#"><span
+										class="header__icon icon-search"></span></a>
+								<a href="#"><span
+										class="header__icon icon-shopping-bag"></spa></a></div>
+						</div>
+
+						<nav class="header__nav">
+							<ul>
+								<li>catalog</li>
+								<li>blog</li>
+								<li>about</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="hero__wrap">
+						<h1 class="title-h1-italic hero__title">Make your dream
+							come
+							true <br>
+							or decorate your home</h1>
+
+						<div class="hero__shop">
+							<img class="hero__img"
+								src="/src/img/promo/ceramic-vase.jpg" alt>
+							<a href="#" class="btn hero__btn">Shop now</a>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="activities">
+				<div class="container">
+					<h2 class="title-h2 activities__titles-h2">create or buy</h2>
+					<div
+						class="grid grid-cols-1 gap-10 lg:grid-cols-5 lg:gap-20 activities__wrap">
+						<div class="activities__content lg:col-span-2">
+							<h3 class="title-h3 activities__titles-h3">our store</h3>
+							<img src="/src//img/about/store.jpg" alt="store"
+								class="activities__img">
+							<p class="font-light">Welcome to <span
+									class="font-medium text-ceramic">Ceramic
+									Soul</span>,
+								where each piece tells a story of craftsmanship
+								and creativity. Our handmade ceramics are
+								thoughtfully designed and carefully crafted,
+								blending traditional techniques with modern
+								aesthetics. Whether you're looking for a unique
+								gift or a special addition to your home, our
+								collection offers timeless pieces that bring
+								warmth and authenticity to any space.</p>
+						</div>
+						<div class="activities__content lg:col-span-3">
+							<h3 class="title-h3 activities__titles-h3">our workshop</h3>
+							<img src="/src/img/about/ceramic.jpg" alt="ceramic"
+								class="activities__img">
+							<p class="font-light">At <span
+									class="font-medium text-ceramic">Ceramic
+									Soul</span>
+								workshop, we don’t just craft ceramics—we invite
+								you to get hands-on and create your own unique
+								pieces. Through our engaging masterclasses,
+								you’ll learn traditional techniques, work with
+								natural materials, and experience the joy of
+								shaping clay into something truly personal.</p>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="relative contact pt-60 md:pt-45">
+				<div class="container">
+					<h2 class="title-h2">get in touch</h2>
+					<div
+						class="relative grid grid-cols-1 gap-40 lg:grid-cols-2 contact__wrap xl:gap-147 mt-59 xl:mt-80">
+						<img src="/src/img/form/tea.jpg" alt="tea"
+							class="hidden lg:block contact__img w-550 xl:w-573">
+						<form class="contact__form">
+							<fieldset class="contact__flex_input xl:flex xl:gap-45">
+								<div class="contact__input">
+									<label for="contact__input_name"
+										class="block text-sm font-light text-dark">Name</label>
+									<input type="text" id="contact__input_name"
+										class="block py-10 duration-150 bg-white rounded-sm px-15 w-340 md:w-300 border-my-border focus:border-dark focus:ring-dark placeholder-ui-disabled text-dark hover:border-dark"
+										placeholder="name"
+										required>
+								</div>
+								<div class="mt-8 contact__input">
+									<label for="contact__input_email"
+										class="block text-sm font-light text-dark">Email</label>
+									<input type="email" id="contact__input_email"
+										class="block py-10 duration-150 bg-white rounded-sm px-15 w-340 md:w-300 border-my-border focus:border-dark focus:ring-dark placeholder-ui-disabled text-dark hover:border-dark"
+										placeholder="name"
+										required>
+								</div>
+							</fieldset>
+
+							<div class="mt-8 contact__input">
+								<label for="contact__input_message"
+									class="block text-sm font-light text-dark">Your question</label>
+								<textarea id="contact__input_message"
+									class="block py-10 duration-150 bg-white rounded-sm px-15 w-340 md:w-300 h-160 border-my-border focus:border-dark focus:ring-dark placeholder-ui-disabled text-dark hover:border-dark"
+									placeholder="Question"></textarea>
+							</div>
+
+							<div class="flex items-center mt-20 contact__checkbox">
+								<input type="checkbox" id="contact__input_checkbox"
+									class="rounded-sm border-dark w-15 h-15 mr-15"
+									required>
+								<label for="contact__input_checkbox"
+									class="block text-sm font-light text-dark">I
+									agree with the
+									<a
+										class="text-link"
+										href>terms</a></label>
+							</div>
+
+							<button type="submit"
+								class="h-40 mt-20 text-sm font-light uppercase duration-700 border rounded-sm w-220 border-dark text-dark hover:border-ceramic hover:text-ceramic active:text-dark disabled:border-ui-disabled disabled:text-ui-disabled">
+								send request</button>
+						</form>
+						<img src="/src/img/form/vase.png" alt="vase"
+							class="absolute bottom-0 right-0 hidden contacts__bg md:block">
+					</div>
+
+				</div>
+			</section>
+			<section class="gallery">
+				<div class="container">
+					<h2 class="title-h2 pt-60 xl:pt-100">check out our works</h2>
+					<div class="relative">
+						<!-- Slider main container -->
+						<div
+							class="mt-40 swiper md:mt-45 lg:mt-80 h-223 md:h-263 md:w-400 lg:h-230 lg:w-full xl:h-265">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<a href="/src/img/inspiration/bee.jpg" data-fancybox="gallery"
+										data-caption="Caption #1"><img
+											class="object-cover w-full h-full"
+											src="/src/img/inspiration/bee.jpg" alt>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="/src/img/inspiration//cat.jpg" data-fancybox="gallery"
+										data-caption="Caption #2"><img
+											class="object-cover w-full h-full"
+											src="/src/img/inspiration/cat.jpg" alt>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="/src/img/inspiration/2115.jpg" data-fancybox="gallery"
+										data-caption="Caption #3"><img
+											class="object-cover w-full h-full"
+											src="/src/img/inspiration/2115.jpg" alt>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="/src/img/inspiration/cat_girl.jpg" data-fancybox="gallery"
+										data-caption="Caption #4"><img
+											class="object-cover w-full h-full"
+											src="/src/img/inspiration/cat_girl.jpg" alt>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="/src/img/inspiration/fixtures.jpg" data-fancybox="gallery"
+										data-caption="Caption #5"><img
+											class="object-cover w-full h-full"
+											src="/src/img/inspiration/fixtures.jpg" alt>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- If we need pagination -->
+						<div
+							class="swiper-pagination !-bottom-30 [&>span]:w-10 [&>span]:h-10 [&>span]:rounded-none [&>span]:bg-ceramic"></div>
+
+						<!-- If we need navigation buttons -->
+						<svg class="swiper-button-prev !-left-27 !hidden lg:!block !w-13 !h-22"
+							width="13"
+							height="22" viewBox="0 0 13 22" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M0.34314 9.8324L9.83288 0.34314C10.2904 -0.11438 11.0326 -0.11438 11.4901 0.34314L12.597 1.45007C13.0541 1.9071 13.0546 2.64734 12.599 3.10535L5.078 10.661L12.5985 18.2172C13.0546 18.6752 13.0536 19.4154 12.5966 19.8724L11.4896 20.9794C11.0321 21.4369 10.2899 21.4369 9.8324 20.9794L0.34314 11.4896C-0.11438 11.0321 -0.11438 10.2899 0.34314 9.8324Z"
+								fill="#232323" />
+						</svg>
+						<svg class="swiper-button-next !-right-27 !hidden lg:!block !w-13 !h-22"
+							width="13"
+							height="22" viewBox="0 0 13 22" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M12.5968 11.4899L3.1073 20.9793C2.64963 21.437 1.90764 21.437 1.45003 20.9793L0.343238 19.8725C-0.113647 19.4157 -0.114525 18.6752 0.341285 18.2172L7.86184 10.6613L0.341285 3.10536C-0.114525 2.6474 -0.113647 1.90692 0.343238 1.45004L1.45003 0.343249C1.90769 -0.114417 2.64968 -0.114417 3.1073 0.343249L12.5967 9.83265C13.0544 10.2903 13.0544 11.0323 12.5968 11.4899Z"
+								fill="#232323" />
+						</svg>
+					</div>
+				</div>
+			</section>
+
+			<footer class="bg-dark py-50 mt-60 xl:pt-79 xl:pb-51">
+				<div
+					class="w-full mx-auto max-w-1430 x-10 px-30 xl:px-10">
+					<div
+						class="flex flex-col flex-wrap justify-between gap-40 md:flex-row md:gap-40">
+						<div>
+							<h3 class="footer__title">newsletter</h3>
+							<p class="text-[16px] font-[300] text-light mt-40">Keep up to date with
+								news
+								and
+								promotions</p>
+							<form action class="mt-40">
+								<input type="email" required placeholder="Enter your email"
+									class="border-b border-x-[0] border-t-[0] border-light bg-dark text-ui-active w-full">
+								<div class="flex items-center mt-20 contact__checkbox">
+									<input type="checkbox" id="contact__input_checkbox"
+										class="rounded-sm bg-dark w-15 h-15 mr-15"
+										required>
+									<label for="contact__input_checkbox"
+										class="block text-sm font-light text-light">I
+										agree with the
+										<a
+											class="text-link"
+											href>terms</a></label>
+								</div>
+								<button type="submit"
+									class="py-10 border bg-inherit border-light px-18 rounded-[2px] mt-20 text-light hover disabled:border-ui-disabled disabled:text-ui-disabled">
+									submit
+								</button>
+							</form>
+
+						</div>
+						<div class="flex flex-wrap gap-x-66 gap-y-40">
+							<div class>
+								<h3 class="footer__title">discover</h3>
+								<ul class="flex flex-col gap-20 mt-40">
+									<li class="list-none"><a class="footer__text" href="#">About
+											Us</a></li>
+									<li class="list-none"><a class="footer__text" href="#">Blog</a></li>
+								</ul>
+
+							</div>
+							<div class>
+								<h3 class="footer__title">shopping</h3>
+								<ul>
+									<li class="mt-40 list-none"><a class=" footer__text" href="#">Catalog
+										</a></li>
+								</ul>
+							</div>
+							<div class>
+								<h3 class="footer__title">information</h3>
+								<ul>
+									<li class="mt-40 list-none">
+										<a class="footer__text" href="#">Terms and Conditions</a>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+						<div>
+							<h3 class="footer__title">follow us</h3>
+							<ul class="flex items-center gap-10 mt-40">
+								<li>
+									<a href="#">
+										<svg width="24" height="24" viewBox="0 0 24 24"
+											fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 16.84 5.44 20.87 10 21.8V15H8V12H10V9.5C10 7.57 11.57 6 13.5 6H16V9H14C13.45 9 13 9.45 13 10V12H16V15H13V21.95C18.05 21.45 22 17.19 22 12Z"
+												fill="white" />
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<svg width="24" height="20" viewBox="0 0 20 20"
+											fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M5.8 0H14.2C17.4 0 20 2.6 20 5.8V14.2C20 15.7383 19.3889 17.2135 18.3012 18.3012C17.2135 19.3889 15.7383 20 14.2 20H5.8C2.6 20 0 17.4 0 14.2V5.8C0 4.26174 0.61107 2.78649 1.69878 1.69878C2.78649 0.61107 4.26174 0 5.8 0ZM5.6 2C4.64522 2 3.72955 2.37928 3.05442 3.05442C2.37928 3.72955 2 4.64522 2 5.6V14.4C2 16.39 3.61 18 5.6 18H14.4C15.3548 18 16.2705 17.6207 16.9456 16.9456C17.6207 16.2705 18 15.3548 18 14.4V5.6C18 3.61 16.39 2 14.4 2H5.6ZM15.25 3.5C15.5815 3.5 15.8995 3.6317 16.1339 3.86612C16.3683 4.10054 16.5 4.41848 16.5 4.75C16.5 5.08152 16.3683 5.39946 16.1339 5.63388C15.8995 5.8683 15.5815 6 15.25 6C14.9185 6 14.6005 5.8683 14.3661 5.63388C14.1317 5.39946 14 5.08152 14 4.75C14 4.41848 14.1317 4.10054 14.3661 3.86612C14.6005 3.6317 14.9185 3.5 15.25 3.5ZM10 5C11.3261 5 12.5979 5.52678 13.5355 6.46447C14.4732 7.40215 15 8.67392 15 10C15 11.3261 14.4732 12.5979 13.5355 13.5355C12.5979 14.4732 11.3261 15 10 15C8.67392 15 7.40215 14.4732 6.46447 13.5355C5.52678 12.5979 5 11.3261 5 10C5 8.67392 5.52678 7.40215 6.46447 6.46447C7.40215 5.52678 8.67392 5 10 5ZM10 7C9.20435 7 8.44129 7.31607 7.87868 7.87868C7.31607 8.44129 7 9.20435 7 10C7 10.7956 7.31607 11.5587 7.87868 12.1213C8.44129 12.6839 9.20435 13 10 13C10.7956 13 11.5587 12.6839 12.1213 12.1213C12.6839 11.5587 13 10.7956 13 10C13 9.20435 12.6839 8.44129 12.1213 7.87868C11.5587 7.31607 10.7956 7 10 7Z"
+												fill="white" />
+										</svg>
+									</a>
+								</li>
+								<li><a href="#">
+										<svg width="20" height="20" viewBox="0 0 20 20"
+											fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M7.04 19.54C8 19.83 8.97 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 8.68678 19.7413 7.38642 19.2388 6.17317C18.7362 4.95991 17.9997 3.85752 17.0711 2.92893C16.1425 2.00035 15.0401 1.26375 13.8268 0.761205C12.6136 0.258658 11.3132 0 10 0C8.68678 0 7.38642 0.258658 6.17317 0.761205C4.95991 1.26375 3.85752 2.00035 2.92893 2.92893C1.05357 4.8043 0 7.34784 0 10C0 14.25 2.67 17.9 6.44 19.34C6.35 18.56 6.26 17.27 6.44 16.38L7.59 11.44C7.59 11.44 7.3 10.86 7.3 9.94C7.3 8.56 8.16 7.53 9.14 7.53C10 7.53 10.4 8.16 10.4 8.97C10.4 9.83 9.83 11.06 9.54 12.24C9.37 13.22 10.06 14.08 11.06 14.08C12.84 14.08 14.22 12.18 14.22 9.5C14.22 7.1 12.5 5.46 10.03 5.46C7.21 5.46 5.55 7.56 5.55 9.77C5.55 10.63 5.83 11.5 6.29 12.07C6.38 12.13 6.38 12.21 6.35 12.36L6.06 13.45C6.06 13.62 5.95 13.68 5.78 13.56C4.5 13 3.76 11.18 3.76 9.71C3.76 6.55 6 3.68 10.32 3.68C13.76 3.68 16.44 6.15 16.44 9.43C16.44 12.87 14.31 15.63 11.26 15.63C10.29 15.63 9.34 15.11 9 14.5L8.33 16.87C8.1 17.73 7.47 18.88 7.04 19.57V19.54Z"
+												fill="white" />
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+				<div class="text-[14px] text-light text-center mt-40">© Copyright 2025,
+					Ceramic
+					soul</div>
+			</footer>
+
+		</main>
+		<script type="module" src="/src/js/main.js"></script>
+
+	</body>
+</html>

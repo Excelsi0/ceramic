@@ -1,0 +1,26 @@
+.footer__title {
+    @apply text-base font-medium uppercase text-light;
+}
+
+.footer__text {
+    @apply text-base font-light text-light;
+}
+
+.nav__link {
+    @apply text-base font-light uppercase text-dark;
+}
+
+.tab_active {
+    @apply before:absolute before:w-full before:h-1 before:bg-dark before:-bottom-1;
+}
+
+.catalog__card {
+    @apply border w-340 xl:w-285 min-h-275 xl:min-h-250 border-dark;
+}
+
+.catalog__item {
+    @apply flex flex-wrap gap-20 md:gap-35 xl:gap-x-83 xl:gap-y-25 mt-60 md:border-t- lg: xl:;
+}
+.catalog__img {
+    @apply object-cover w-full h-198 xl:h-180;
+}

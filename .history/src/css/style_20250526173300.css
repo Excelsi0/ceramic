@@ -1,0 +1,7 @@
+.footer__title {
+    @apply text-sm font-medium uppercase text-light;
+}
+
+.footer__text {
+    @apply text-[5px];
+}

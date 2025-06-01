@@ -1,0 +1,14 @@
+@use "/src/sass/libs/modern-normalize.min.css";
+@use "/src/sass/libs/fontello.css";
+
+@use "/src/sass/base/basic.scss";
+@use "/src/sass/base/variables.scss";
+@use "/src/sass/base/mixins.scss";
+@use "/src/sass/ui/button.scss";
+@use "/src/sass/ui/titles.scss";
+
+@use "/src/sass/blocks/hero.scss";
+@use "/src/sass/blocks/gallery.scss";
+
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";

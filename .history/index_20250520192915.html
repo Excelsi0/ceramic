@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>pottery</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
+			rel="stylesheet" />
+		<link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<main>
+			<section class="hero">
+				<img src="/src/img/promo/potter.jpg" alt="potter"
+					class="hero__potter">
+				<div class="container">
+					<div class="header">
+						<div class="header__top">
+							<div
+								class="burger"><span></span><span></span><span></span>
+							</div>
+							<a href class="header__logo"><img
+									src="/src//logo/logo.png" alt="logo"
+									class="header__logo_img"></a>
+							<div class="header__icons">
+								<a href="#"><span
+										class="header__icon icon-search"></span></a>
+								<a href="#"><span
+										class="header__icon icon-shopping-bag"></spa></a></div>
+						</div>
+
+						<nav class="header__nav">
+							<ul>
+								<li>catalog</li>
+								<li>blog</li>
+								<li>about</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="hero__wrap">
+						<h1 class="title-h1-italic hero__title">Make your dream
+							come
+							true <br>
+							or decorate your home</h1>
+
+						<div class="hero__shop">
+							<img class="hero__img"
+								src="/src/img/promo/ceramic-vase.jpg" alt>
+							<a href="#" class="btn hero__btn">Shop now</a>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<!-- lg:grid-cols-[1fr_2fr] -->
+			<section class="activities">
+				<div class="container">
+					<h2 class="title-h2 activities__titles-h2">create or buy</h2>
+					<div
+						class="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-20 activities__wrap">
+						<div class="activities__content lg:col-span-2">
+							<h3 class="title-h3 activities__titles-h3">our store</h3>
+							<img src="/src//img/about/store.jpg" alt="store"
+								class="activities__img">
+							<p class="font-light activities__text">Welcome to <span
+									class="font-medium text-ceramic">Ceramic
+									Soul</span>,
+								where each piece tells a story of craftsmanship
+								and creativity. Our handmade ceramics are
+								thoughtfully designed and carefully crafted,
+								blending traditional techniques with modern
+								aesthetics. Whether you're looking for a unique
+								gift or a special addition to your home, our
+								collection offers timeless pieces that bring
+								warmth and authenticity to any space.</p>
+						</div>
+						<div class="activities__content lg:col-span-3">
+							<h3 class="title-h3 activities__titles-h3">our workshop</h3>
+							<img src="/src/img/about/ceramic.jpg" alt="ceramic"
+								class="activities__img">
+							<p class="font-light activities__text">At <span
+									class="font-medium text-ceramic">Ceramic
+									Soul</span>
+								workshop, we don’t just craft ceramics—we invite
+								you to get hands-on and create your own unique
+								pieces. Through our engaging masterclasses,
+								you’ll learn traditional techniques, work with
+								natural materials, and experience the joy of
+								shaping clay into something truly personal.</p>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="contact pt-60 md:pt-45 pb-100">
+				<div class="container">
+					<h2 class="title-h2">get in touch</h2>
+					<div class="grid grid-cols-1 lg:grid-cols-2 contact__wrap">
+						<img src="/src/img/form/tea.jpg" alt="tea"
+							class="hidden lg:block contact__img">
+						<form class="contact__form mt-59">
+							<div class="contact__input">
+								<label for="contact__input_name"
+									class="block text-sm font-light text-dark">Name</label>
+								<input type="text" id="contact__input_name"
+									class="block py-10 px-15 w-340 md:w-300 border-my-border rounded-sm bg-white focus:border-dark focus:ring-dark placeholder-ui-disabled text-dark"
+									placeholder="name">
+							</div>
+							<div class="contact__input mt-5">
+								<label for="contact__input_email"
+									class="block text-sm font-light text-dark">Email</label>
+								<input type="email" id="contact__input_email"
+									class="block py-10 px-15 w-340 border-my-border rounded-sm bg-white focus:border-dark focus:ring-dark placeholder-ui-disabled text-dark"
+									placeholder="name">
+							</div>
+
+							<div class="contact__input mt-5">
+								<label for="contact__input_message"
+									class="block text-sm font-light text-dark">Your question</label>
+								<textarea id="contact__input_message"
+									class="block py-10 px-15 w-340 h-160 border-my-border rounded-sm bg-white focus:border-dark focus:ring-dark placeholder-ui-disabled text-dark"
+									placeholder="Question"></textarea>
+							</div>
+
+							<div class="flex items-center contact__checkbox mt-20">
+								<input type="checkbox" id="contact__input_checkbox"
+									class="border-dark w-15 h-15 mr-15 rounded-sm">
+								<label for="contact__input_checkbox"
+									class="block text-sm font-light text-dark">I agree with the <a
+										href>terms</a></label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script type="module" src="/src/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,37 @@
+.footer__title {
+    @apply text-base font-medium uppercase text-light;
+}
+
+.footer__text {
+    @apply text-base font-light text-light;
+}
+
+.nav__link {
+    @apply text-base font-light uppercase text-dark;
+}
+
+.tab_active {
+    @apply before:absolute before:w-full before:h-1 before:bg-dark before:-bottom-1;
+}
+
+.catalog__card {
+    @apply duration-300 ease-in cursor-pointer w-340 xl:w-285 min-h-275 xl:min-h-250 hover:scale-110;
+}
+
+.catalog__item {
+    @apply flex flex-wrap gap-20 md:gap-35 xl:gap-x-83 xl:gap-y-25 mt-60;
+    @apply relative before:md:w-200 before:md:absolute before:md:h-1 before:md:bg-dark before:md:top-0;
+    /* @apply before:absolute before:top-0 before:h-1 before:w-200 before:bg-dark before:content-[''] relative; */
+    /* relative before:content-[''] before:absolute before:-top-10 before:left-0 before:h-1 before:w-[200px] before:bg-dark? */
+}
+.catalog__img {
+    @apply object-cover w-full h-198 xl:h-180;
+}
+
+.catalog__text_wrap {
+    @apply border border-t-0 border-dark p-11;
+}
+
+.catalog__text {
+    @apply text-base font-medium text-dark;
+}

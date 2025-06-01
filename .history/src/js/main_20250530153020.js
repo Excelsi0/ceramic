@@ -1,0 +1,101 @@
+import "/src/sass/style.scss";
+
+import "flowbite";
+
+import Swiper from "swiper";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+// import Swiper and modules styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/scss/autoplay";
+
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
+try {
+    // init Swiper:
+    const swiper = new Swiper(".swiper", {
+        slidesPerView: 1,
+        loop: true,
+        // Responsive breakpoints
+        breakpoints: {
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 5,
+            },
+            1920: {
+                slidesPerView: 3,
+                spaceBetween: 35,
+            },
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: true,
+        },
+
+        modules: [Navigation, Pagination, Autoplay],
+    });
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+    });
+} catch (e) {}
+
+const menu = document.getElementById("sideMenu");
+const toggle = document.getElementById("toggleMenu");
+const exit = document.getElementById("closeMenu");
+
+toggle.addEventListener("click", () => {
+    const isOpen = menu.classList.contains("left-0");
+
+    menu.classList.toggle("left-0");
+    menu.classList.toggle("-left-full");
+
+    // Блокируем/разблокируем прокрутку
+    document.body.classList.toggle("overflow-hidden", !isOpen);
+});
+
+exit.addEventListener("click", () => {
+    menu.classList.remove("left-0");
+    menu.classList.add("-left-full");
+
+    // Всегда разблокируем прокрутку при закрытии
+    document.body.classList.remove("overflow-hidden");
+});
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768) {
+        menu.classList.remove("left-0");
+        menu.classList.add("-left-full");
+        document.body.classList.remove("overflow-hidden");
+    }
+});
+
+try {
+    const tabs = document.querySelectorAll(".catalog__tab");
+    const contents = document.querySelectorAll(".catalog__content-item");
+
+    tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => {
+            // Удаляем активный класс у всех табов и контента
+            tabs.forEach((t) => t.classList.remove("catalog__tab_active"));
+            contents.forEach((c) => (c.style.display = "none"));
+
+            // Добавляем активный класс к нажатому табу и показываем соответствующий контент
+            tab.classList.add("catalog__tab_active");
+            contents[index].style.display = "block";
+        });
+    });
+
+    // Показываем первый контент при загрузке
+    contents.forEach((c, i) => (c.style.display = i === 0 ? "block" : "none"));
+} catch (e) {}

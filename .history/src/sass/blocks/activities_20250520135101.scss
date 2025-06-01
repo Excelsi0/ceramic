@@ -1,0 +1,18 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.activities {
+    margin-top: 60px;
+    &__titles-h3 {
+        margin-top: 20px;
+    }
+    &__img {
+        margin-top: 40px;
+        width: 100%;
+    }
+    &__text {
+        margin-top: 40px;
+        font-weight: 400;
+        font-size: 16px;
+        color: $dark;
+    }
+}

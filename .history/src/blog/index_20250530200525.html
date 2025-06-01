@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>pottery catalog</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
+            rel="stylesheet" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="/src/css/style.css">
+
+    </head>
+    <body>
+        <main>
+            <section class="catalog">
+                <div id="sideMenu"
+                    class="fixed w-screen h-screen transition-all duration-300 bg-light -left-full">
+                    <button id="closeMenu"
+                        class="pl-10 font-thin text-[40px] text-dark pt-50">×</button>
+                    <ul class="flex flex-col ml-24 gap-25 mt-50">
+                        <li><a class="nav__link"
+                                href="/src/catalog/">catalog</a></li>
+                        <li><a class="nav__link"
+                                href="#">blog</a></li>
+                        <li><a class="nav__link"
+                                href="#">about</a></li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <div class="header">
+
+                        <div class="header__top">
+                            <div
+                                class="burger"
+                                id="toggleMenu"><span></span><span></span><span></span>
+                            </div>
+                            <a href="/src/" class="header__logo"><img
+                                    src="/src//logo/logo.png" alt="logo"
+                                    class="header__logo_img"></a>
+                            <div class="header__icons">
+                                <a href="#"><span
+                                        class="header__icon icon-search"></span></a>
+                                <a href="#"><span
+                                        class="header__icon icon-shopping-bag"></spa></a></div>
+                        </div>
+
+                        <nav class="header__nav">
+                            <ul>
+                                <li> <a href="#">catalog</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">about</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <h1 class="title-h2 mt-60 xl:mt-100">our pottery</h1>
+                    <div
+                        class="flex flex-wrap max-w-full py-12 border px-25 border-dark mt-60 gap-x-50 gap-y-13 w-max">
+                        <button
+                            class="relative text-xl font-medium uppercase text-dark tab tab_active">for
+                            tea</button>
+                        <button
+                            class="relative text-xl font-medium uppercase text-dark tab">for
+                            kitchen</button>
+                        <button
+                            class="relative text-xl font-medium uppercase text-dark tab">for
+                            plants</button>
+                    </div>
+                    <div class="catalog__wrap">
+                        <div
+                            class="catalog__item">
+
+                            <div class="catalog__card ">
+                                <img class="catalog__img"
+                                    src="/src/img/inspiration/2115.jpg" alt>
+                                <div class="catalog__text_wrap"><h3
+                                        class="catalog__text">Terracotta
+                                        Whisper</h3>
+                                    <p class="catalog__text">19.99 €</p></div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <img class="catalog__img"
+                                    src="/src/img/inspiration/bee.jpg" alt>
+                                <div class="catalog__text_wrap"><h3
+                                        class="catalog__text">Clay Bloom</h3>
+                                    <p class="catalog__text">39.99 €</p></div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <img class="catalog__img"
+                                    src="/src/img/inspiration/cat.jpg" alt>
+                                <div class="catalog__text_wrap"><h3
+                                        class="catalog__text">Terracotta
+                                        Whisper</h3>
+                                    <p class="catalog__text">14.99 €</p></div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <img class="catalog__img"
+                                    src="/src/img/inspiration/cat_girl.jpg"
+                                    alt>
+                                <div class="catalog__text_wrap"><h3
+                                        class="catalog__text">Earthen
+                                        Grace</h3>
+                                    <p class="catalog__text">12.49 €</p></div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <img class="catalog__img"
+                                    src="/src/img/inspiration/street.jpg" alt>
+                                <div class="catalog__text_wrap"><h3
+                                        class="catalog__text">Moss & Moon</h3>
+                                    <p class="catalog__text">341.14 €</p></div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="catalog__item">
+                            <div class="catalog__card">
+                                <img class="catalog__img"
+                                    src="/src/img/inspiration/fixtures.jpg"
+                                    alt>
+                                <div class="catalog__text_wrap"><h3
+                                        class="catalog__text">Solace Set</h3>
+                                    <p class="catalog__text">33.43 €</p></div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <img class="catalog__img"
+                                    src="/src/img/inspiration/husky.jpg" alt>
+                                <div class="catalog__text_wrap"><h3
+                                        class="catalog__text">Earthen
+                                        Grace</h3>
+                                    <p class="catalog__text">24.43 €</p></div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <img class="catalog__img"
+                                    src="/src/img/inspiration/lucifer_cat.jpg"
+                                    alt>
+                                <div class="catalog__text_wrap"><h3
+                                        class="catalog__text">Terracotta
+                                        Whisper</h3>
+                                    <p class="catalog__text">245.54 €</p></div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <img class="catalog__img"
+                                    src="/src/img/inspiration/street.jpg" alt>
+                                <div class="catalog__text_wrap"><h3
+                                        class="catalog__text">Moss & Moon</h3>
+                                    <p class="catalog__text">341.14 €</p></div>
+
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="catalog__item">
+                            <div class="catalog__card">
+                                <img class="catalog__img"
+                                    src="/src/img/inspiration/fixtures.jpg"
+                                    alt>
+                                <div class="catalog__text_wrap"><h3
+                                        class="catalog__text">Earthen
+                                        Grace</h3>
+                                    <p class="catalog__text">29.99 €</p></div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <img class="catalog__img"
+                                    src="/src/img/inspiration/cat_girl.jpg"
+                                    alt>
+                                <div class="catalog__text_wrap"><h3
+                                        class="catalog__text">Moss & Moon</h3>
+                                    <p class="catalog__text">23.42 €</p></div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <img class="catalog__img"
+                                    src="/src/img/inspiration/bee.jpg" alt>
+                                <div class="catalog__text_wrap"><h3
+                                        class="catalog__text">Terracotta
+                                        Whisper</h3>
+                                    <p class="catalog__text">00.00 €</p></div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <img class="catalog__img"
+                                    src="/src/img/inspiration/lucifer_cat.jpg"
+                                    alt>
+                                <div class="catalog__text_wrap"><h3
+                                        class="catalog__text">Clay Bloom</h3>
+                                    <p class="catalog__text">23.44 €</p></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script type="module" src="/src/js/main.js"></script>
+    </body>
+</html>
