@@ -17,11 +17,13 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^5.0.36",
+    "ejs": "^3.1.10",
     "flowbite": "^3.1.2",
     "just-validate": "^4.3.0",
     "pnpm": "^10.11.0",
     "swiper": "^11.2.8",
-    "validator": "^13.15.15"
+    "validator": "^13.15.15",
+    "vite-plugin-ejs": "^1.7.0"
   },
   "private": true,
   "peerDependencies": {
